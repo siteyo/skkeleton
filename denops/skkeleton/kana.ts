@@ -77,7 +77,7 @@ export async function loadKanaTableFiles(
   });
 
   await Promise.all(tasks);
-  injectKanaTable("rom", table);
+  injectKanaTable(config.kanaTable, table);
 }
 
 /*
